@@ -8,5 +8,5 @@ npm-debug.*
 
 dist/
 node_modules/
-packagee-lock.json
-app/csss/*
+package-lock.json
+app/css/*
