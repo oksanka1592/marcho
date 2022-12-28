@@ -160,6 +160,134 @@
   }
 }
 
+footer {
+  background-color: $bg;
+}
+
+.footer-top {
+  padding: 70px 0 40px;
+  border-bottom: 1px solid #ececec;
+  display: flex;
+  justify-content: space-between;
+
+  &__contact {
+    width: 250px;
+    margin-right: 50px;
+  }
+
+  &__nav {
+    width: 170px;
+    margin-right: 30px;
+  }
+
+  &__item-form {
+    max-width: 470px
+  }
+
+  &__logo {
+    margin-bottom: 33px;
+    display: block;
+  }
+
+  &__adress,
+  &__email,
+  &__phone {
+    display: block;
+    margin-bottom: 14px;
+  }
+
+  &__social-list {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  &__social-item+.footer-top__social-item {
+    padding-left: 18px;
+  }
+
+  &__social-link {
+    transition: all .3s;
+
+    path {
+      fill: $default;
+    }
+
+    &:hover {
+      path {
+        fill: $accent;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    color: $title;
+    @extend %roboto-400;
+    font-size: 22px;
+    line-height: 1;
+
+  }
+
+  &__link {
+    margin-bottom: 14px;
+    display: block;
+  }
+
+  &__text {
+    margin-bottom: 25px;
+  }
+
+  &__form-input {
+    background-color: #fff;
+    max-width: 320px;
+    width: 100%;
+    border: none;
+    padding: 12px 10px 12px 15px;
+    box-shadow: 0px 7px 20px 0px rgba(192, 192, 192, 0.3);
+
+    &::placeholder {
+      color: $default;
+      font-size: 16px;
+    }
+
+  }
+
+  &__form-btn {
+    @extend %btn;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.footer-bottom {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+
+  &__accept-img {
+    display: inline;
+    margin-left: 25px;
+    vertical-align: middle;
+  }
+}
+
+
+.top {
+  &__conteiner {
+    max-width: 1700px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 120px 0 130px;
+    text-align: center;
+  }
+}
+
+
 .categories-info {
   padding: 120px 0;
   background-image: url('../images/decor/categories-left-bg.png');
@@ -579,8 +707,8 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    
-    &::after{
+
+    &::after {
       content: '';
       position: absolute;
       right: -20px;
@@ -595,12 +723,15 @@
   &__item {
     max-width: 370px;
     border: 1px solid #ececec;
-    &:hover{
+
+    &:hover {
       box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.35);
       border: 1px solid #fff;
-      .blog__item-link{
+
+      .blog__item-link {
         color: $accent;
-        &::after{
+
+        &::after {
           background-image: url('../images/icons/arrow-accent.svg');
         }
       }
@@ -630,7 +761,8 @@
   &__item-date {
     padding-left: 30px;
     position: relative;
-    &::before{
+
+    &::before {
       content: '';
       position: absolute;
       width: 20px;
@@ -640,23 +772,27 @@
     }
 
   }
-  &__item-autor::before{
+
+  &__item-autor::before {
     background-image: url('../images/icons/user-grey.svg');
   }
 
-  &__item-date::before{
+  &__item-date::before {
     background-image: url('../images/icons/time.svg');
   }
-  &__item-title{
+
+  &__item-title {
     @extend %roboto-400;
     color: $title;
     font-size: 22px;
     margin-bottom: 20px;
   }
-    &__item-link{
-      position: relative;
-    }
-  &__item-link::after{
+
+  &__item-link {
+    position: relative;
+  }
+
+  &__item-link::after {
     content: '';
     width: 10px;
     height: 8px;
@@ -666,142 +802,61 @@
     right: -14px;
   }
 }
-.BG {
-  background-color: rgb(255, 255, 255);
-  box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.35);
-  position: absolute;
-  left: 375px;
-  top: 5688px;
-  width: 370px;
-  height: 478px;
-  z-index: 113;
-}
 
+.modal {
+  padding-top: 100px;
+  max-width: 570px;
+  margin: 0 auto 115px;
 
-
-
-
-
-
-footer {
-  background-color: $bg;
-}
-
-.footer-top {
-  padding: 70px 0 40px;
-  border-bottom: 1px solid #ececec;
-  display: flex;
-  justify-content: space-between;
-
-  &__contact {
-    width: 250px;
-    margin-right: 50px;
-  }
-
-  &__nav {
-    width: 170px;
-    margin-right: 30px;
-  }
-
-  &__item-form {
-    max-width: 470px
-  }
-
-  &__logo {
-    margin-bottom: 33px;
-    display: block;
-  }
-
-  &__adress,
-  &__email,
-  &__phone {
-    display: block;
-    margin-bottom: 14px;
-  }
-
-  &__social-list {
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
-  }
-
-  &__social-item+.footer-top__social-item {
-    padding-left: 18px;
-  }
-
-  &__social-link {
-    transition: all .3s;
-
-    path {
-      fill: $default;
-    }
-
-    &:hover {
-      path {
-        fill: $accent;
-      }
-    }
-  }
-
-  &__title {
+  &__links {
+    text-align: center;
     margin-bottom: 40px;
-    color: $title;
-    @extend %roboto-400;
-    font-size: 22px;
-    line-height: 1;
-
   }
 
   &__link {
-    margin-bottom: 14px;
+    color: #909090;
+    @extend %roboto-400;
+    text-transform: uppercase;
+    margin: 0 30px;
+    font-size: 22px;
+  }
+
+  &__link--active {
+    color: $accent;
+  }
+
+  &__label {
+    margin-bottom: 30px;
     display: block;
   }
 
-  &__text {
-    margin-bottom: 25px;
-  }
-
-  &__form-input {
-    background-color: #fff;
-    max-width: 320px;
+  &__input {
+    display: block;
     width: 100%;
     border: none;
-    padding: 12px 10px 12px 15px;
-    box-shadow: 0px 7px 20px 0px rgba(192, 192, 192, 0.3);
-
-    &::placeholder {
-      color: $default;
-      font-size: 16px;
-    }
-
+    background-color: $bg;
+    margin-top: 4px;
+    height: 60px;
+    padding: 0 15px;
   }
 
-  &__form-btn {
-    @extend %btn;
+  &__btn {
+    display: block;
+    background-color: $title;
+    text-transform: uppercase;
+    color: #fff;
+    @extend %roboto-400;
+    padding: 14px 0;
+    width: 100%;
     border: none;
     cursor: pointer;
   }
-}
-
-.footer-bottom {
-  height: 75px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 12px;
-
-  &__accept-img {
-    display: inline;
-    margin-left: 25px;
-    vertical-align: middle;
+  &__error{
+    margin-top: 12px;
+    color: $accent;
+    display: inline-block;
   }
 }
-
-
-
-
-
-
 
 
 
