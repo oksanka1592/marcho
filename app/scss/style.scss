@@ -138,6 +138,7 @@
     color: #28384f;
     margin-bottom: 40px;
     font-size: 48px;
+    line-height: 52px;
   }
 
   &__text {
@@ -169,6 +170,9 @@
     margin-right: 30px;
     width: 370px;
   }
+     &__filters-btn {
+       display: none;
+     }
 }
 
 .filter {
@@ -1562,4 +1566,5 @@
   }
 }
 
-@import 'vars';
+@import 'media';
+
